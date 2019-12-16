@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>多文件拖拽上传——进度条</title>
+<script type="text/javascript" src="../js/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="../js/myJs/utils.js"></script>
+<script type="text/javascript" src="../js/myJs/fileUpload4.js"></script>
+<link href="../css/fileUpload4.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div class="wrap">
+		<div class="file">
+			<!-- <p>
+				<span>文件上传：</span> <span class="file-name"></span> 
+				<button type='button' class="updata" id="upload_btn">上传</button>
+			</p> -->
+			<div>
+				<button type='button' id="upload_btn">上传</button>
+				<button type='button' id="clear_btn">清空</button>
+			</div>
+			<div>
+				<label>进度条:</label>
+				<progress value="0" max="100" id="progress_bar"> </progress>
+			</div>
+		</div>
+		<div class="file-wrap">
+			<div class="file-div">
+				<p class="fileInputP">
+					<span>选择文件</span> <input type="file" multiple id="fileInput" />
+				</p>
+				<br>
+			</div>
+
+			<span id="fileSpan">
+				<p class="span-p">或者将文件拖到此处</p>
+			</span>
+		</div>
+		
+		<div>
+			<table class="table">
+				<tbody id="upload_tbody"></tbody>
+			</table>
+		</div>
+	</div>
+
+</body>
+
+</html>
